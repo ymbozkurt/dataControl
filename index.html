@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veri Düzenleme</title>
+</head>
+<body>
+    <h1>Başlık</h1>
+    <div style="border: 1px solid black; padding: 20px;">
+        <h4>Add Data</h4>
+        <form action="http://127.0.0.1:3000/add" method="POST">
+            <label>Data Key:</label>
+            <input type="text" name="key"><br><br>
+            <label>Data Value:</label>
+            <input type="text" name="value"><br><br>
+            <input type="submit" value="Add Data">
+        </form>
+    </div>
+    <div style="border: 1px solid black; padding: 20px;">
+        <h4>Remove Data</h4>
+        <form action="http://127.0.0.1:3000/remove" method="POST">
+            <label>Data Key:</label>
+            <input type="text" name="key"><br><br>
+            <input type="submit" value="Remove Data">
+        </form>
+    </div>
+    <div style="border: 1px solid black; padding: 20px;">
+        <h4>Show Data</h4>
+        <form action="http://127.0.0.1:3000/list" method="POST">
+            <label>Data</label>
+            <input type="submit" value="List Data">
+        </form>
+    </div>
+    
+</body>
+</html>
